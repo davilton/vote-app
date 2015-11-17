@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: vote_app_development
+  pool: 5
+  username: vote_app
+  password: 
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: vote_app_test
+  pool: 5
+  username: vote_app
+  password: 
