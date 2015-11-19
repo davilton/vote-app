@@ -1,5 +1,7 @@
-/ h1 Votes#index
-| Total Votes: 
-span#total #{@votes}
-
-p = button_to "vote", votes_path, remote: true
+.container
+  .row
+    .six.offset-by-two.columns style="margin-top: 20%; text-align:center; border: 1px solid; padding: 20px;"  
+      h2 Vote App
+      | Total Votes: 
+      span#total #{@votes}
+      p = button_to "VOTE", votes_path, remote: true, class: 'button-primary'
