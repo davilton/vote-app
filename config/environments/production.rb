@@ -1,6 +1,12 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Middleware to use websockets if present, Heroku specific
+  config.middleware.use ChatActionCable  
+
+  # Use websockets server
+  config.web_socket_server_url = "wss://glacial-reaches-9689.herokuapp.com/"  
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
