@@ -6,3 +6,10 @@ local: &local
   :inline: true
 development: *local  
 test: *local  
+
+production: &production
+  :url: ENV['REDISTOGO_URL']
+  :host: ENV['REDIS_HOST']
+  :password: ENV['REDIS_PASSWORD']
+  :inline: true
+  :timeout: 1
