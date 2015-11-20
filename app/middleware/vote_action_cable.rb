@@ -7,7 +7,7 @@ class VoteActionCable
   end
 
   def call(env)
-    if Faye::Websockets.websockets?(env)
+    if Faye::WebSocket.websocket?(env)
       ActionCable.server.call(env)
     else
       @app.call(env)
