@@ -1,4 +1,4 @@
-class ActionCableVote
+class VoteActionCable
   # Heroku specific
   # middleware to use websockets if present
 
