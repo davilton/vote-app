@@ -1,3 +1,5 @@
+require 'faye/websocket'
+
 class VoteActionCable
   # Heroku specific
   # middleware to use websockets if present

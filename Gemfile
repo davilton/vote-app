@@ -20,6 +20,8 @@ gem 'slim'
 
 gem 'redis'
 
+gem 'faye-websocket'
+
 # Rails websockets
 gem 'actioncable', github: 'rails/actioncable'
 
